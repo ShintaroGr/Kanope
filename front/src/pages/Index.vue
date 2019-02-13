@@ -1,43 +1,43 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="">
     <div class="row">
       <div class="col-12 q-pa-md">
-        <q-markup-table>
+        <q-markup-table class="full-width">
           <thead>
           <tr>
             <th class="text-left">Surface</th>
-            <th class="text-right">Moyenne de surface d’ensoleillement</th>
-            <th class="text-right">Somme des surfaces d’ensoleillement</th>
-            <th class="text-right">Nombre de batiments concernés</th>
+            <th class="text-right" style="white-space: normal">Moyenne de surface d’ensoleillement</th>
+            <th class="text-right" style="white-space: normal">Somme des surfaces d’ensoleillement</th>
+            <th class="text-right" style="white-space: normal">Nombre de batiments concernés</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td class="text-left">Moins de 700 Kwh/m²/an</td>
+            <td class="text-left" style="white-space: normal">Moins de 700 Kwh/m²/an</td>
             <td class="text-right">{{table.less_than_700.average.toFixed(2)}}</td>
             <td class="text-right">{{table.less_than_700.sum}}</td>
             <td class="text-right">{{table.less_than_700.count}}</td>
           </tr>
           <tr>
-            <td class="text-left">De 700 à 800 Kwh/m²/an</td>
+            <td class="text-left" style="white-space: normal">De 700 à 800 Kwh/m²/an</td>
             <td class="text-right">{{table.between_700_800.average.toFixed(2)}}</td>
             <td class="text-right">{{table.between_700_800.sum}}</td>
             <td class="text-right">{{table.between_700_800.count}}</td>
           </tr>
           <tr>
-            <td class="text-left">De 800 à 900 Kwh/m²/an</td>
+            <td class="text-left" style="white-space: normal">De 800 à 900 Kwh/m²/an</td>
             <td class="text-right">{{table.between_800_900.average.toFixed(2)}}</td>
             <td class="text-right">{{table.between_800_900.sum}}</td>
             <td class="text-right">{{table.between_800_900.count}}</td>
           </tr>
           <tr>
-            <td class="text-left">De 900 à 1000 Kwh/m²/an</td>
+            <td class="text-left" style="white-space: normal">De 900 à 1000 Kwh/m²/an</td>
             <td class="text-right">{{table.between_900_1000.average.toFixed(2)}}</td>
             <td class="text-right">{{table.between_900_1000.sum}}</td>
             <td class="text-right">{{table.between_900_1000.count}}</td>
           </tr>
           <tr>
-            <td class="text-left">Plus de 1000 Kwh/m²/an</td>
+            <td class="text-left" style="white-space: normal">Plus de 1000 Kwh/m²/an</td>
             <td class="text-right">{{table.more_than_1000.average.toFixed(2)}}</td>
             <td class="text-right">{{table.more_than_1000.sum}}</td>
             <td class="text-right">{{table.more_than_1000.count}}</td>
