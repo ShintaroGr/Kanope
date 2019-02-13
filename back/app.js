@@ -34,9 +34,7 @@ function getDataFromAPI ({start = 0, rows = 100} = {}) {
         Building.findById(value.fields.objectid, function (err, building) {
           if (!building) {
             newBuilding._id = value.fields.objectid
-            newBuilding.save((err) => {
-              console.log('ERROR:', err)
-            })
+            newBuilding.save()
           } else {
             building.m2_e_in700 = newBuilding.m2_e_in700
             building.m2_e_70_80 = newBuilding.m2_e_70_80
