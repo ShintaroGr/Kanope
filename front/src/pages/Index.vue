@@ -126,7 +126,7 @@ export default {
     }
   },
   mounted () {
-    this.$axios.get('http://localhost:5000/buildings')
+    this.$axios.get('http://shintaro.ovh:5000/buildings')
       .then((response) => {
         this.table = response.data
       })
